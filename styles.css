@@ -54,7 +54,7 @@ header {
     position: relative;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding-top: 0; /* Extra space to account for fixed navbar */
 }
 
 .text-section {
@@ -92,7 +92,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
-    margin-top: 35vh;
+    margin-top: 10px;
 }
 
 .school-block {
@@ -105,6 +105,17 @@ header {
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
+    position: relative;
+}
+
+.school-block img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #003865;
+    background-color: white;
 }
 
 .school-block:hover {
@@ -208,5 +219,9 @@ header {
     }
     .school-block {
         width: 95%;
+    }
+    .school-block img {
+        width: 80px;
+        height: 80px;
     }
 }
